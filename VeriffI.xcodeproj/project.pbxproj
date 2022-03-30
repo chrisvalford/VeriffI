@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		2F817CB427F31D6F0080EAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB327F31D6F0080EAEA /* AppDelegate.swift */; };
 		2F817CB627F31D6F0080EAEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB527F31D6F0080EAEA /* SceneDelegate.swift */; };
-		2F817CB827F31D6F0080EAEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB727F31D6F0080EAEA /* ViewController.swift */; };
+		2F817CB827F31D6F0080EAEA /* FaceLandmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB727F31D6F0080EAEA /* FaceLandmarkViewController.swift */; };
 		2F817CBB27F31D6F0080EAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817CB927F31D6F0080EAEA /* Main.storyboard */; };
 		2F817CBD27F31D720080EAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F817CBC27F31D720080EAEA /* Assets.xcassets */; };
 		2F817CC027F31D720080EAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817CBE27F31D720080EAEA /* LaunchScreen.storyboard */; };
 		2F817CCB27F31D720080EAEA /* VeriffITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CCA27F31D720080EAEA /* VeriffITests.swift */; };
 		2F817CD527F31D720080EAEA /* VeriffIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CD427F31D720080EAEA /* VeriffIUITests.swift */; };
 		2F817CD727F31D720080EAEA /* VeriffIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CD627F31D720080EAEA /* VeriffIUITestsLaunchTests.swift */; };
+		2F817CE427F408450080EAEA /* ScanDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CE327F408450080EAEA /* ScanDocumentViewController.swift */; };
+		2F817CE627F4085B0080EAEA /* RecognizedTextDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CE527F4085B0080EAEA /* RecognizedTextDataSource.swift */; };
+		2F817CE827F408C80080EAEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CE727F408C80080EAEA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		2F817CB027F31D6F0080EAEA /* VeriffI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeriffI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F817CB327F31D6F0080EAEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F817CB527F31D6F0080EAEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F817CB727F31D6F0080EAEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F817CB727F31D6F0080EAEA /* FaceLandmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLandmarkViewController.swift; sourceTree = "<group>"; };
 		2F817CBA27F31D6F0080EAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F817CBC27F31D720080EAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F817CBF27F31D720080EAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		2F817CD027F31D720080EAEA /* VeriffIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeriffIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F817CD427F31D720080EAEA /* VeriffIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriffIUITests.swift; sourceTree = "<group>"; };
 		2F817CD627F31D720080EAEA /* VeriffIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriffIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F817CE327F408450080EAEA /* ScanDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanDocumentViewController.swift; sourceTree = "<group>"; };
+		2F817CE527F4085B0080EAEA /* RecognizedTextDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizedTextDataSource.swift; sourceTree = "<group>"; };
+		2F817CE727F408C80080EAEA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,10 @@
 			children = (
 				2F817CB327F31D6F0080EAEA /* AppDelegate.swift */,
 				2F817CB527F31D6F0080EAEA /* SceneDelegate.swift */,
-				2F817CB727F31D6F0080EAEA /* ViewController.swift */,
+				2F817CE727F408C80080EAEA /* HomeViewController.swift */,
+				2F817CB727F31D6F0080EAEA /* FaceLandmarkViewController.swift */,
+				2F817CE327F408450080EAEA /* ScanDocumentViewController.swift */,
+				2F817CE527F4085B0080EAEA /* RecognizedTextDataSource.swift */,
 				2F817CB927F31D6F0080EAEA /* Main.storyboard */,
 				2F817CBC27F31D720080EAEA /* Assets.xcassets */,
 				2F817CBE27F31D720080EAEA /* LaunchScreen.storyboard */,
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F817CB827F31D6F0080EAEA /* ViewController.swift in Sources */,
+				2F817CB827F31D6F0080EAEA /* FaceLandmarkViewController.swift in Sources */,
+				2F817CE427F408450080EAEA /* ScanDocumentViewController.swift in Sources */,
+				2F817CE827F408C80080EAEA /* HomeViewController.swift in Sources */,
 				2F817CB427F31D6F0080EAEA /* AppDelegate.swift in Sources */,
 				2F817CB627F31D6F0080EAEA /* SceneDelegate.swift in Sources */,
+				2F817CE627F4085B0080EAEA /* RecognizedTextDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
