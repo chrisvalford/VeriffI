@@ -69,22 +69,35 @@
                                     <constraint firstItem="V6C-dV-PPQ" firstAttribute="width" secondItem="zB1-8s-pgA" secondAttribute="width" id="VZl-kT-4M4"/>
                                 </constraints>
                             </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oza-7n-qZ8" customClass="NoCameraView" customModule="VeriffI" customModuleProvider="target">
+                                <rect key="frame" x="20" y="388" width="374" height="120"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="TfM-ZG-ER1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4aB-93-2rz"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
+                            <constraint firstItem="Oza-7n-qZ8" firstAttribute="centerY" secondItem="jyl-7H-6AS" secondAttribute="centerY" id="5Jb-hy-wxJ"/>
+                            <constraint firstItem="Oza-7n-qZ8" firstAttribute="leading" secondItem="4aB-93-2rz" secondAttribute="leading" constant="20" id="Kyc-dL-GK7"/>
                             <constraint firstItem="019-dC-DbE" firstAttribute="centerX" secondItem="jyl-7H-6AS" secondAttribute="centerX" id="MVt-mt-bz7"/>
                             <constraint firstItem="019-dC-DbE" firstAttribute="top" secondItem="4aB-93-2rz" secondAttribute="top" constant="22" id="QF8-Qk-b1F"/>
+                            <constraint firstItem="4aB-93-2rz" firstAttribute="trailing" secondItem="Oza-7n-qZ8" secondAttribute="trailing" constant="20" id="TT0-aS-WjD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wr1-cS-wEP"/>
                     <connections>
                         <outlet property="activityIndicator" destination="OLF-N3-iqj" id="hcR-lh-ebl"/>
+                        <outlet property="facelandmarkButton" destination="V6C-dV-PPQ" id="Ry4-7m-kj5"/>
+                        <outlet property="noCameraView" destination="Oza-7n-qZ8" id="xGv-G6-pQN"/>
+                        <outlet property="scanDocumentButton" destination="zB1-8s-pgA" id="kta-zl-tZ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmk-aF-wnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1459" y="84"/>
+            <point key="canvasLocation" x="-1459.4202898550725" y="83.705357142857139"/>
         </scene>
         <!--Face Landmark View Controller-->
         <scene sceneID="tne-QT-ifu">

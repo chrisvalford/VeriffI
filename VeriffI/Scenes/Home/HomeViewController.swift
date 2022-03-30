@@ -10,7 +10,11 @@ import VisionKit
 import Vision
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var scanDocumentButton: UIButton!
+    @IBOutlet weak var facelandmarkButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var noCameraView: NoCameraView!
     
     static let faceLandmarkIdentifier = "faceLandmarkVC"
     static let scanDocumentIdentifier = "scanDocumentVC"
@@ -35,6 +39,16 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !UIImagePickerController.isSourceTypeAvailable(.camera) {
+            scanDocumentButton.isEnabled = false
+            facelandmarkButton.isEnabled = false
+            noCameraView.title = "Your device doesn't have a camera."
+            noCameraView.message = "You need a camera to scan your documents and face."
+            noCameraView.isHidden = false
+            noCameraView.layoutSubviews()
+        }
+        
         textRecognitionRequest = VNRecognizeTextRequest(completionHandler: { (request, error) in
             guard let resultsViewController = self.resultsViewController else {
                 print("resultsViewController is not set")
