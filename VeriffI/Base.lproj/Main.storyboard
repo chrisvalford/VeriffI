@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cnw-4g-8im">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -37,7 +38,7 @@
                                 <rect key="frame" x="197" y="110" width="20" height="100"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-8s-pgA">
-                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <state key="normal" title="Button"/>
@@ -45,11 +46,11 @@
                                             <color key="baseForegroundColor" name="AccentColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="scan:" destination="odY-uQ-JjK" eventType="touchUpInside" id="GMQ-C5-tjd"/>
+                                            <action selector="documentTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="gM6-gW-PA7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="V6C-dV-PPQ" userLabel="Take photo">
-                                        <rect key="frame" x="0.0" y="40" width="20" height="20"/>
+                                        <rect key="frame" x="0.0" y="60" width="20" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="AccentColor"/>
@@ -58,12 +59,9 @@
                                             <color key="baseForegroundColor" name="AccentColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="scan:" destination="odY-uQ-JjK" eventType="touchUpInside" id="vVl-lm-2sF"/>
+                                            <action selector="faceTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="7gI-wh-yLy"/>
                                         </connections>
                                     </button>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="OLF-N3-iqj">
-                                        <rect key="frame" x="0.0" y="80" width="20" height="20"/>
-                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="V6C-dV-PPQ" firstAttribute="width" secondItem="zB1-8s-pgA" secondAttribute="width" id="VZl-kT-4M4"/>
@@ -89,7 +87,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wr1-cS-wEP"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="OLF-N3-iqj" id="hcR-lh-ebl"/>
                         <outlet property="facelandmarkButton" destination="V6C-dV-PPQ" id="Ry4-7m-kj5"/>
                         <outlet property="noCameraView" destination="Oza-7n-qZ8" id="xGv-G6-pQN"/>
                         <outlet property="scanDocumentButton" destination="zB1-8s-pgA" id="kta-zl-tZ2"/>
@@ -98,63 +95,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmk-aF-wnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1459.4202898550725" y="83.705357142857139"/>
-        </scene>
-        <!--Face Landmark View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="faceLandmarkVC" id="BYZ-38-t0r" customClass="FaceLandmarkViewController" customModule="VeriffI" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-kc-j6V">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="jd0-kc-j6V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="44O-hx-1lF"/>
-                            <constraint firstAttribute="bottom" secondItem="jd0-kc-j6V" secondAttribute="bottom" id="6p0-kN-hA3"/>
-                            <constraint firstItem="jd0-kc-j6V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MCb-9P-vhT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jd0-kc-j6V" secondAttribute="trailing" id="fLL-n2-FYj"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="previewView" destination="jd0-kc-j6V" id="8PP-D5-wKA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2255" y="946"/>
-        </scene>
-        <!--Scan Document View Controller-->
-        <scene sceneID="2aa-tf-oSt">
-            <objects>
-                <viewController storyboardIdentifier="scanDocumentVC" id="j95-QL-9Q7" customClass="ScanDocumentViewController" customModule="VeriffI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7sf-Ru-M5k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-GI-QS1">
-                                <rect key="frame" x="20" y="86" width="374" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="tzj-kw-tFC"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <connections>
-                        <outlet property="textView" destination="LFr-GI-QS1" id="K0f-ak-bHj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bMI-kl-eSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1459" y="946"/>
         </scene>
     </scenes>
     <resources>
