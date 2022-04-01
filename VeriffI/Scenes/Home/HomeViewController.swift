@@ -40,8 +40,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func faceTapped(_ sender: UIButton) {
-        guard let faceDetectionViewController = libStoryboard.instantiateViewController(withIdentifier: "faceDetectionViewController") as? ScanFaceDetectionViewController else { return }
-        navigationController?.pushViewController(faceDetectionViewController, animated: true)
+        guard let scanFaceViewController = libStoryboard.instantiateViewController(withIdentifier: "scanFaceViewController") as? ScanFaceViewController else { return }
+        navigationController?.pushViewController(scanFaceViewController, animated: true)
         
     }
 }

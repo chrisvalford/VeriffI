@@ -52,7 +52,6 @@
 		2F817CD627F31D720080EAEA /* VeriffIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriffIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2F817CE727F408C80080EAEA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F817CEC27F42ADC0080EAEA /* NoCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCameraView.swift; sourceTree = "<group>"; };
-		2F817D2527F5C4A90080EAEA /* VeriffLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = VeriffLib; path = ../VeriffLib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +83,6 @@
 		2F817CA727F31D6F0080EAEA = {
 			isa = PBXGroup;
 			children = (
-				2F817D2427F5C4A90080EAEA /* Packages */,
 				2F817CB227F31D6F0080EAEA /* VeriffI */,
 				2F817CC927F31D720080EAEA /* VeriffITests */,
 				2F817CD327F31D720080EAEA /* VeriffIUITests */,
@@ -156,14 +154,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2F817D2427F5C4A90080EAEA /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				2F817D2527F5C4A90080EAEA /* VeriffLib */,
-			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 2F817CA727F31D6F0080EAEA;
+			packageReferences = (
+				2FE6AF4027F7027500D426C0 /* XCRemoteSwiftPackageReference "VeriffLib" */,
+			);
 			productRefGroup = 2F817CB127F31D6F0080EAEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -647,6 +640,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FE6AF4027F7027500D426C0 /* XCRemoteSwiftPackageReference "VeriffLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisvalford/VeriffLib";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		2FE3C43927F5C8B70072844F /* VeriffLib */ = {
