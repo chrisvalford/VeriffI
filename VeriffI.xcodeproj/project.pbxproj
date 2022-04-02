@@ -9,16 +9,15 @@
 /* Begin PBXBuildFile section */
 		2F817CB427F31D6F0080EAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB327F31D6F0080EAEA /* AppDelegate.swift */; };
 		2F817CB627F31D6F0080EAEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB527F31D6F0080EAEA /* SceneDelegate.swift */; };
-		2F817CB827F31D6F0080EAEA /* FaceLandmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CB727F31D6F0080EAEA /* FaceLandmarkViewController.swift */; };
 		2F817CBB27F31D6F0080EAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817CB927F31D6F0080EAEA /* Main.storyboard */; };
 		2F817CBD27F31D720080EAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F817CBC27F31D720080EAEA /* Assets.xcassets */; };
 		2F817CC027F31D720080EAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817CBE27F31D720080EAEA /* LaunchScreen.storyboard */; };
 		2F817CCB27F31D720080EAEA /* VeriffITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CCA27F31D720080EAEA /* VeriffITests.swift */; };
 		2F817CD527F31D720080EAEA /* VeriffIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CD427F31D720080EAEA /* VeriffIUITests.swift */; };
 		2F817CD727F31D720080EAEA /* VeriffIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CD627F31D720080EAEA /* VeriffIUITestsLaunchTests.swift */; };
-		2F817CE427F408450080EAEA /* ScanDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CE327F408450080EAEA /* ScanDocumentViewController.swift */; };
-		2F817CE627F4085B0080EAEA /* RecognizedTextDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CE527F4085B0080EAEA /* RecognizedTextDataSource.swift */; };
 		2F817CE827F408C80080EAEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CE727F408C80080EAEA /* HomeViewController.swift */; };
+		2F817CED27F42ADC0080EAEA /* NoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817CEC27F42ADC0080EAEA /* NoCameraView.swift */; };
+		2FE3C43A27F5C8B70072844F /* VeriffLib in Frameworks */ = {isa = PBXBuildFile; productRef = 2FE3C43927F5C8B70072844F /* VeriffLib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 		2F817CB027F31D6F0080EAEA /* VeriffI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeriffI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F817CB327F31D6F0080EAEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F817CB527F31D6F0080EAEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F817CB727F31D6F0080EAEA /* FaceLandmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLandmarkViewController.swift; sourceTree = "<group>"; };
 		2F817CBA27F31D6F0080EAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F817CBC27F31D720080EAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F817CBF27F31D720080EAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +50,8 @@
 		2F817CD027F31D720080EAEA /* VeriffIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeriffIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F817CD427F31D720080EAEA /* VeriffIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriffIUITests.swift; sourceTree = "<group>"; };
 		2F817CD627F31D720080EAEA /* VeriffIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriffIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2F817CE327F408450080EAEA /* ScanDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanDocumentViewController.swift; sourceTree = "<group>"; };
-		2F817CE527F4085B0080EAEA /* RecognizedTextDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognizedTextDataSource.swift; sourceTree = "<group>"; };
 		2F817CE727F408C80080EAEA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F817CEC27F42ADC0080EAEA /* NoCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE3C43A27F5C8B70072844F /* VeriffLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +87,7 @@
 				2F817CC927F31D720080EAEA /* VeriffITests */,
 				2F817CD327F31D720080EAEA /* VeriffIUITests */,
 				2F817CB127F31D6F0080EAEA /* Products */,
+				2F817D2127F5BAD30080EAEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,12 +104,9 @@
 		2F817CB227F31D6F0080EAEA /* VeriffI */ = {
 			isa = PBXGroup;
 			children = (
+				2F817CE927F428510080EAEA /* Scenes */,
 				2F817CB327F31D6F0080EAEA /* AppDelegate.swift */,
 				2F817CB527F31D6F0080EAEA /* SceneDelegate.swift */,
-				2F817CE727F408C80080EAEA /* HomeViewController.swift */,
-				2F817CB727F31D6F0080EAEA /* FaceLandmarkViewController.swift */,
-				2F817CE327F408450080EAEA /* ScanDocumentViewController.swift */,
-				2F817CE527F4085B0080EAEA /* RecognizedTextDataSource.swift */,
 				2F817CB927F31D6F0080EAEA /* Main.storyboard */,
 				2F817CBC27F31D720080EAEA /* Assets.xcassets */,
 				2F817CBE27F31D720080EAEA /* LaunchScreen.storyboard */,
@@ -136,6 +132,30 @@
 			path = VeriffIUITests;
 			sourceTree = "<group>";
 		};
+		2F817CE927F428510080EAEA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2F817CEB27F42AB30080EAEA /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2F817CEB27F42AB30080EAEA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F817CE727F408C80080EAEA /* HomeViewController.swift */,
+				2F817CEC27F42ADC0080EAEA /* NoCameraView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2F817D2127F5BAD30080EAEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +172,9 @@
 			dependencies = (
 			);
 			name = VeriffI;
+			packageProductDependencies = (
+				2FE3C43927F5C8B70072844F /* VeriffLib */,
+			);
 			productName = VeriffI;
 			productReference = 2F817CB027F31D6F0080EAEA /* VeriffI.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 2F817CA727F31D6F0080EAEA;
+			packageReferences = (
+				2FE6AF4027F7027500D426C0 /* XCRemoteSwiftPackageReference "VeriffLib" */,
+			);
 			productRefGroup = 2F817CB127F31D6F0080EAEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,12 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F817CB827F31D6F0080EAEA /* FaceLandmarkViewController.swift in Sources */,
-				2F817CE427F408450080EAEA /* ScanDocumentViewController.swift in Sources */,
+				2F817CED27F42ADC0080EAEA /* NoCameraView.swift in Sources */,
 				2F817CE827F408C80080EAEA /* HomeViewController.swift in Sources */,
 				2F817CB427F31D6F0080EAEA /* AppDelegate.swift in Sources */,
 				2F817CB627F31D6F0080EAEA /* SceneDelegate.swift in Sources */,
-				2F817CE627F4085B0080EAEA /* RecognizedTextDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +481,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +510,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,6 +640,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FE6AF4027F7027500D426C0 /* XCRemoteSwiftPackageReference "VeriffLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisvalford/VeriffLib";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FE3C43927F5C8B70072844F /* VeriffLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VeriffLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F817CA827F31D6F0080EAEA /* Project object */;
 }
