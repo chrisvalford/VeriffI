@@ -1,9 +1,9 @@
 /*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-View controller from which to invoke the document scanner.
-*/
+ See LICENSE folder for this sample’s licensing information.
+ 
+ Abstract:
+ View controller from which to invoke the document scanner.
+ */
 
 import UIKit
 import VeriffLib
@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         let storyboard = UIStoryboard(name: "SDK", bundle: VeriffLib.libBundle)
         return storyboard
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,12 +36,16 @@ class HomeViewController: UIViewController {
     
     @IBAction func documentTapped(_ sender: UIButton) {
         guard let scanDocumentViewController = libStoryboard.instantiateViewController(withIdentifier: "scanDocumentViewController") as? ScanDocumentViewController else { return }
-        navigationController?.pushViewController(scanDocumentViewController, animated: true)
+        scanDocumentViewController.modalPresentationStyle = .fullScreen
+        scanDocumentViewController.modalTransitionStyle = .coverVertical
+        show(scanDocumentViewController, sender: self)
+        //self.present(scanDocumentViewController, animated: false, completion: nil)
     }
     
     @IBAction func faceTapped(_ sender: UIButton) {
         guard let scanFaceViewController = libStoryboard.instantiateViewController(withIdentifier: "scanFaceViewController") as? ScanFaceViewController else { return }
-        navigationController?.pushViewController(scanFaceViewController, animated: true)
-        
+        scanFaceViewController.modalPresentationStyle = .fullScreen
+        scanFaceViewController.modalTransitionStyle = .coverVertical
+        self.present(scanFaceViewController, animated: true, completion: nil)
     }
 }
