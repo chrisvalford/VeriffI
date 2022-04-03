@@ -13,7 +13,6 @@
         <!--Navigation Controller-->
         <scene sceneID="baL-3S-ygr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4A-Qs-76k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="cnw-4g-8im" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rE0-5h-Zgp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -23,6 +22,7 @@
                         <segue destination="odY-uQ-JjK" kind="relationship" relationship="rootViewController" id="mXd-rj-ZD2"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4A-Qs-76k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2255" y="84"/>
         </scene>
@@ -34,41 +34,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="019-dC-DbE">
-                                <rect key="frame" x="197" y="110" width="20" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="019-dC-DbE">
+                                <rect key="frame" x="43" y="110" width="328" height="280"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-8s-pgA">
-                                        <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9rJ-lK-kHV">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="XIj-9z-Nfa">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="JTf-g4-Jp1"/>
+                                                    <constraint firstAttribute="width" constant="80" id="nRU-qy-TBa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-8s-pgA">
+                                                <rect key="frame" x="88" y="0.0" width="240" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Scan document">
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="documentTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="gM6-gW-PA7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZGK-Aa-2m8">
+                                        <rect key="frame" x="0.0" y="100" width="328" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-5r-o4U">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="fRL-xP-xap"/>
+                                                    <constraint firstAttribute="width" constant="80" id="fgH-r0-bfz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="V6C-dV-PPQ" userLabel="Take photo">
+                                                <rect key="frame" x="328" y="0.0" width="0.0" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Take Photo">
+                                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="faceTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="7gI-wh-yLy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fL-nS-XSc">
+                                        <rect key="frame" x="0.0" y="200" width="328" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Scan document">
-                                            <color key="baseForegroundColor" name="AccentColor"/>
-                                        </buttonConfiguration>
+                                        <buttonConfiguration key="configuration" style="plain" title="Validate"/>
                                         <connections>
-                                            <action selector="documentTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="gM6-gW-PA7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="V6C-dV-PPQ" userLabel="Take photo">
-                                        <rect key="frame" x="0.0" y="60" width="20" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" name="AccentColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Take Photo">
-                                            <color key="baseForegroundColor" name="AccentColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="faceTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="7gI-wh-yLy"/>
+                                            <action selector="validateTapped:" destination="odY-uQ-JjK" eventType="touchUpInside" id="1JG-I1-Vve"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="V6C-dV-PPQ" firstAttribute="width" secondItem="zB1-8s-pgA" secondAttribute="width" id="VZl-kT-4M4"/>
-                                </constraints>
                             </stackView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oza-7n-qZ8" customClass="NoCameraView" customModule="VeriffI" customModuleProvider="target">
-                                <rect key="frame" x="20" y="388" width="374" height="120"/>
+                                <rect key="frame" x="20" y="398" width="374" height="120"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="TfM-ZG-ER1"/>
@@ -78,18 +109,21 @@
                         <viewLayoutGuide key="safeArea" id="4aB-93-2rz"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="Oza-7n-qZ8" firstAttribute="centerY" secondItem="jyl-7H-6AS" secondAttribute="centerY" id="5Jb-hy-wxJ"/>
                             <constraint firstItem="Oza-7n-qZ8" firstAttribute="leading" secondItem="4aB-93-2rz" secondAttribute="leading" constant="20" id="Kyc-dL-GK7"/>
                             <constraint firstItem="019-dC-DbE" firstAttribute="centerX" secondItem="jyl-7H-6AS" secondAttribute="centerX" id="MVt-mt-bz7"/>
                             <constraint firstItem="019-dC-DbE" firstAttribute="top" secondItem="4aB-93-2rz" secondAttribute="top" constant="22" id="QF8-Qk-b1F"/>
                             <constraint firstItem="4aB-93-2rz" firstAttribute="trailing" secondItem="Oza-7n-qZ8" secondAttribute="trailing" constant="20" id="TT0-aS-WjD"/>
+                            <constraint firstItem="Oza-7n-qZ8" firstAttribute="top" secondItem="019-dC-DbE" secondAttribute="bottom" constant="8" id="ej4-gm-6Qu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wr1-cS-wEP"/>
                     <connections>
-                        <outlet property="facelandmarkButton" destination="V6C-dV-PPQ" id="Ry4-7m-kj5"/>
                         <outlet property="noCameraView" destination="Oza-7n-qZ8" id="xGv-G6-pQN"/>
                         <outlet property="scanDocumentButton" destination="zB1-8s-pgA" id="kta-zl-tZ2"/>
+                        <outlet property="scanDocumentImage" destination="XIj-9z-Nfa" id="eQs-Am-ZUt"/>
+                        <outlet property="scanFaceButton" destination="V6C-dV-PPQ" id="Ry4-7m-kj5"/>
+                        <outlet property="scanFaceImage" destination="g8A-5r-o4U" id="Zas-lB-htC"/>
+                        <outlet property="startValidation" destination="1fL-nS-XSc" id="iiS-vJ-g0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmk-aF-wnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Placeholder" width="320" height="320"/>
         <namedColor name="AccentColor">
             <color red="0.0040000001899898052" green="0.3059999942779541" blue="0.37299999594688416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
